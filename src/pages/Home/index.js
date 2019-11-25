@@ -1,13 +1,22 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
-import {Container, Background, Text, Content, Logo, BoxLogo} from './styles';
+import {
+  Container,
+  Background,
+  Content,
+  Logo,
+  BoxLogo,
+  OptionsView,
+  TitleSites,
+} from './styles';
 import SearchBar from '../../Components/SearchBar';
+import OptionsButton from '../../Components/OptionsButton';
 
 export function navigationOptions({navigation}) {
   return {header: null};
 }
 
-const pages = () => {
+function Home({navigation}) {
   return (
     <Container>
       <StatusBar
@@ -20,11 +29,16 @@ const pages = () => {
         <BoxLogo>
           <Logo source={require('../../assets/operaLogo.png')} />
         </BoxLogo>
-        <SearchBar />
-        <Text>Texto</Text>
+        <SearchBar next={navigation} />
+        <OptionsView>
+          <OptionsButton />
+          <OptionsButton />
+          <OptionsButton />
+        </OptionsView>
+        <TitleSites>SITES PRINCIPAIS</TitleSites>
       </Content>
     </Container>
   );
-};
+}
 
-export default pages;
+export default Home;

@@ -31,4 +31,15 @@ export const Logo = styled.Image`
   height: 150px;
 `;
 
-export const Text = styled.Text``;
+export const OptionsView = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 35px 20px 25px 20px;
+`;
+
+export const TitleSites = styled.Text`
+  color: #bebebe;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+`;

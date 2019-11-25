@@ -17,7 +17,9 @@ export const LogoSearch = styled.Image`
 export const SearchInput = styled.TextInput.attrs({
   placeholder: 'Pesquisar ou digitar um endereço',
   placeholderTextColor: '#808080',
-})``;
+})`
+  color: #fff;
+`;
 
 export const BoxButton = styled.TouchableOpacity`
   margin-horizontal: 5px;
