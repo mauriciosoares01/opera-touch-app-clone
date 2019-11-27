@@ -1,7 +1,7 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import HomeScreen, {navigationOptions} from './pages/Home';
-import WebView from './pages/WebView';
+import WebView, {navigationOptionsWeb} from './pages/WebViewPage';
 
 const MainStack = createStackNavigator({
   Home: {
@@ -10,6 +10,7 @@ const MainStack = createStackNavigator({
   },
   WebViewPage: {
     screen: WebView,
+    navigationOptions: navigationOptionsWeb,
   },
 });
 

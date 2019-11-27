@@ -31,9 +31,9 @@ function Home({navigation}) {
         </BoxLogo>
         <SearchBar next={navigation} />
         <OptionsView>
-          <OptionsButton />
-          <OptionsButton />
-          <OptionsButton />
+          <OptionsButton iconName="send" title="Meu Flow" />
+          <OptionsButton iconName="query-builder" title="Histórico" />
+          <OptionsButton iconName="tab" title="Guias" />
         </OptionsView>
         <TitleSites>SITES PRINCIPAIS</TitleSites>
       </Content>

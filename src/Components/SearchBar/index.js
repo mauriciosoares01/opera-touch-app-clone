@@ -19,6 +19,8 @@ function SearchBar({next}) {
         keyboardAppearance="dark"
         onChangeText={setTextSearch}
         onSubmitEditing={handleSubmitEditing}
+        autoCapitalize="none"
+        autoCorrect={false}
       />
       <BoxButton>
         <Options name="dots-vertical" size={25} color="#fff" />
