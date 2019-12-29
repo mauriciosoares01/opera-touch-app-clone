@@ -6,6 +6,8 @@ export const Container = styled.View`
 
 export const Header = styled.View`
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   height: 65px;
   background-color: #222021;
 `;
@@ -25,6 +27,10 @@ export const LogoSearch = styled.Image`
 `;
 
 export const SendButton = styled.TouchableOpacity`
-  margin-top: 30px;
-  padding: 3px;
+  margin-top: 25px;
+  padding: 8px;
+`;
+
+export const SearchBox = styled.View`
+  flex-direction: row;
 `;

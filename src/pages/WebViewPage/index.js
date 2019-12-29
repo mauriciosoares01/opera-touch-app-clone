@@ -1,6 +1,13 @@
 import React, {useState} from 'react';
 import {StatusBar} from 'react-native';
-import {Container, Header, LogoSearch, TextInput, SendButton} from './styles';
+import {
+  Container,
+  Header,
+  LogoSearch,
+  TextInput,
+  SendButton,
+  SearchBox,
+} from './styles';
 import {WebView} from 'react-native-webview';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -23,16 +30,18 @@ function WebViewPage({navigation}) {
   return (
     <Container>
       <Header>
-        <LogoSearch source={require('../../assets/googleSearchLogo.png')} />
-        <TextInput
-          placeholder={path}
-          onChangeText={setTextHeader}
-          onSubmitEditing={handleSubmitEditing}
-          numberOfLines={1}
-          elipsedMode="tail"
-          autoCapitalize="none"
-          autoCorrect={false}
-        />
+        <SearchBox>
+          <LogoSearch source={require('../../assets/googleSearchLogo.png')} />
+          <TextInput
+            placeholder={path}
+            onChangeText={setTextHeader}
+            onSubmitEditing={handleSubmitEditing}
+            numberOfLines={1}
+            elipsedMode="tail"
+            autoCapitalize="none"
+            autoCorrect={false}
+          />
+        </SearchBox>
         <SendButton onPress={handleSubmitEditing}>
           <Icon name="send" color="#fff" size={22} />
         </SendButton>
