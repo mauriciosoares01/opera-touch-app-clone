@@ -8,9 +8,12 @@ import {
   BoxLogo,
   OptionsView,
   TitleSites,
+  MenuBox,
 } from './styles';
 import SearchBar from '../../Components/SearchBar';
 import OptionsButton from '../../Components/OptionsButton';
+import MenuButton from '../../Components/MenuButton';
+import HideWithKeyboard from 'react-native-hide-with-keyboard';
 
 export function navigationOptions({navigation}) {
   return {header: null};
@@ -37,6 +40,11 @@ function Home({navigation}) {
         </OptionsView>
         <TitleSites>SITES PRINCIPAIS</TitleSites>
       </Content>
+      <HideWithKeyboard>
+        <MenuBox>
+          <MenuButton />
+        </MenuBox>
+      </HideWithKeyboard>
     </Container>
   );
 }

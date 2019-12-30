@@ -2,6 +2,8 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
+  flex-direction: column;
+  z-index: 0;
 `;
 
 export const Background = styled.ImageBackground`
@@ -42,4 +44,11 @@ export const TitleSites = styled.Text`
   font-weight: bold;
   font-size: 12px;
   text-align: center;
+`;
+
+export const MenuBox = styled.View`
+  align-self: center;
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
 `;
